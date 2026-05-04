@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments
+.venv/
+venv/
+
+# Local tool state
+.codex
+.claude/settings.local.json
+
+# Logs and experiment tracking
+*.log
+wandb/
+output/
+results/
+
+# Datasets and generated transfer artifacts
+data/Amazon/
+MiniOneRec_transfer_bundle_*/converted/
+MiniOneRec_transfer_bundle_*/shared/
+MiniOneRec_transfer_bundle_*/sid_variants/
+
+# Model/checkpoint/data artifacts
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.pkl
+*.npy
+*.npz
+*.parquet
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

@@ -1,0 +1,6 @@
+method,training_entrypoint,generation_entrypoint,raw_training_collision_rate,final_sid_collision_rate,first3_collision_rate,num_items,unique_paths,collided_items,collided_groups,max_group_size,token_length_distribution,current_code_compatible,can_train_now,notes
+constrained_rqkmeans,rq/rqkmeans_constrained.py,embedded_in_training_script,0.1090613131,0.0000000000,0.1090613131,3686,3686,0,0,1,3:3003;4:683,no,no,zero final collision comes from 4th-token deduplication
+rqkmeans_plus,rq/rqkmeans_plus.py,rq/generate_indices_plus.py,0.1131307651,0.0000000000,0.1131307651,3686,3686,0,0,1,3:3012;4:674,no,no,zero final collision comes from 4th-token deduplication
+rqkmeans_faiss,rq/rqkmeans_faiss.py,not_required,0.1945198047,0.1945198047,0.1945198047,3686,2969,717,420,22,3:3686,yes,yes,plain FAISS residual quantizer baseline without --uniform
+rqvae,rq/rqvae.py,rq/generate_indices.py,0.0881714596,0.0035268584,0.0035268584,3686,3673,13,13,2,3:3686,yes,yes,generation script further reduces collisions with iterative use_sk passes
+
